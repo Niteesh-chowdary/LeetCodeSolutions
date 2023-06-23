@@ -6,6 +6,7 @@ class Solution {
             profit = Math.max(profit,prices[i]-effectiveBuy-fee);
             effectiveBuy = Math.min(effectiveBuy,prices[i]-profit);
         }
+        
         return profit;
     }
 }
